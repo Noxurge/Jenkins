@@ -1,6 +1,5 @@
 import discord
 from discord import app_commands
-from config import *
 
 token = os.environ.get('Token_Discord_Bot')
 id_do_servidor = int(os.environ.get('Id_Servidor'))
