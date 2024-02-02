@@ -23,6 +23,9 @@ tree = app_commands.CommandTree(aclient)
 @tree.command(guild = discord.Object(id=id_do_servidor), name = 'teste', description='Testando') #Comando específico para seu servidor
 async def slash2(interaction: discord.Interaction):
     await interaction.response.send_message(f"Estou funcionando!", ephemeral = True) 
+@tree.command(guild = discord.Object()id=id_do_servidor), name = 'alo', description='Olá mundo')
+async def slash2(interaction: discord.Interaction):
+    await interaction.response.send_message("Olá mundo!", ephemeral = True)
 
 aclient.run(token)
 
